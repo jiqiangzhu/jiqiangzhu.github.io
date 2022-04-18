@@ -13,6 +13,9 @@
 9. 严禁修改js原生对象原型，严禁修改公共对象方法
 10. beforeRouteLeave一定做好异常处理，确保能执行到next
 11. 定时器轮询接口，指定menu-id，请求头添加x-relet:20，关闭接口[性能上报](this.$http('tosreport.department.allocation', data, {log:false, axios: {headers: {'X-menu-id': '150146044725102064'}}})),在beforeRouteLeave内关闭定时器
-12. 
-13. 被激活的模块，不能重新去请求接口拉取数据，在beforeRouteEnter内用`vm.$route.meta.layou`t判断是首次打开还是被激活
+12. 被激活的模块，不能重新去请求接口拉取数据，在beforeRouteEnter内用`vm.$route.meta.layou`t判断是首次打开还是被激活
+13. 跟标签不使用v-if
+14. 多个http请求，如果没有依赖，不要使用await阻塞
+15. 请求加loading效果
+16. 公司名，客户名手机号需要加密
 
