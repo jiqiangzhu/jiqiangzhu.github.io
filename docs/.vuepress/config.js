@@ -1,4 +1,4 @@
-const {path} = require('@vuepress/utils')
+const { path } = require('@vuepress/utils')
 
 module.exports = {
   // 站点配置
@@ -27,13 +27,22 @@ module.exports = {
         link: '/network/'
       },
       {
-        text: '后端',
-        link: '/api/'
-      },
-      {
         text: '2022面经',
         link: '/interview/'
-      }
+      },
+      {
+        text: '更多',
+        children: [
+          {
+            text: '规范',
+            link: '/git',
+          },
+          {
+            text: '后端',
+            link: '/api/'
+          },
+        ],
+      },
     ],
     darkMode: true, // 是否展示切换夜间模式按钮
     repo: 'https://github.com/jiqiangzhu/jiqiangzhu.github.io',
@@ -48,6 +57,12 @@ module.exports = {
             'closure.md', 'js-prototype.md', 'array-prototype.md',
             'es6.md', 'promise.md', 'my-promise.md', 'async-await.md',
             'event-loop.md', 'interview-questions.md']
+        }
+      ],
+      '/git/': [
+        {
+          text: '企业级开发规范自动化构建',
+          children: ['index.md', 'standard.md', 'CI-CD.md']
         }
       ],
       '/vue/': [
@@ -73,7 +88,7 @@ module.exports = {
       '/api/': [
         {
           text: '服务器相关',
-          children: ['express-deploy.md','node.md']
+          children: ['express-deploy.md', 'node.md']
         }
       ],
       '/interview/': [
