@@ -73,7 +73,7 @@ module.exports = {
       '/api/': [
         {
           text: '服务器相关',
-          children: ['express-deploy.md']
+          children: ['express-deploy.md','node.md']
         }
       ],
       '/interview/': [

@@ -237,7 +237,38 @@ function solution(str) {
 }
 ```
 
+### 实现一个小驼峰命名的函数
 
+```js
+function solution(str) {
+  const arr = str.split('');
+  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    if (i === 0) {
+      arr[i] = arr[i].toLowerCase()
+    } else if (arr[i] === '_'){
+      arr.splice(i, 1);
+      arr[i] = arr[i].toUpperCase()
+      console.log('str', str);
+    }
+  }
+  return arr.join('');
+}
+```
+
+### 实现promise.finally
+
+```typescript
+const finally = (executor = new Function) => {
+    return this.then((value: unknown) => { 
+        return myPromise.resolve(executor()).then(() => value) // 为了将值继续传递供链式调用
+    }, (reason: any) => {
+        return myPromise.resolve(executor()).then(() => { //为了将值继续传递供链式调用
+            throw reason
+        })
+    })
+}
+```
 
 
 

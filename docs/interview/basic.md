@@ -535,40 +535,14 @@ MD5加密可用来将密文保存在数据库，在认证时计算出密文判�
 ### **`common JS`和`esmoduleJS`的区别**
 
 1. CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。
-2. CommonJS 模块是运行时加载，ES6 模块是编译时输出。
+2. CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。
+2. CommonJS模块的require()是同步加载模块，ES6模块的import命令是异步加载，有一个独立的模块依赖的解析阶段
 
-### 实现一个小驼峰命名的函数
+CommonJS加载的是一个对象（即module.exports属性），该对象只有在脚本运行完才会生成。而ES6模块不是对象，他的对外接口知识一种静态定义，在代码静态解析阶段就会生成
 
-```js
-function solution(str) {
-  const arr = str.split('');
-  console.log(arr);
-  for (let i = 0; i < arr.length; i++) {
-    if (i === 0) {
-      arr[i] = arr[i].toLowerCase()
-    } else if (arr[i] === '_'){
-      arr.splice(i, 1);
-      arr[i] = arr[i].toUpperCase()
-      console.log('str', str);
-    }
-  }
-  return arr.join('');
-}
-```
+CommonJS模块输出的是值的引用，模块内部的变化影响不到这个值
 
-### 实现promise.finally
+### defer和async
 
-```typescript
-const finally = (executor = new Function) => {
-    return this.then((value: unknown) => { 
-        return myPromise.resolve(executor()).then(() => value) // 为了将值继续传递供链式调用
-    }, (reason: any) => {
-        return myPromise.resolve(executor()).then(() => { //为了将值继续传递供链式调用
-            throw reason
-        })
-    })
-}
-```
-
-
+`defer`是“渲染完再执行”，`async`是“下载完就执行”
 
