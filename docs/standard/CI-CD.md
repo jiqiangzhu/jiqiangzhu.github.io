@@ -1,6 +1,6 @@
 # CI CD持续集成，持续交付
 
-
+`Continuous Integration (CI) / Continuous Delivery (CD) `
 
 ## Github Action
 
@@ -67,13 +67,9 @@ jobs:
 
 ```
 
+## git hooks
 
-
-
-
-
-
-## post-receive
+### post-receive
 
 ```bash
 #!/bin/bash

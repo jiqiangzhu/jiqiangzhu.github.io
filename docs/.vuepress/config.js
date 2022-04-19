@@ -35,7 +35,7 @@ module.exports = {
         children: [
           {
             text: '规范',
-            link: '/git',
+            link: '/standard/',
           },
           {
             text: '后端',
@@ -59,10 +59,10 @@ module.exports = {
             'event-loop.md', 'interview-questions.md']
         }
       ],
-      '/git/': [
+      '/standard/': [
         {
           text: '企业级开发规范自动化构建',
-          children: ['index.md', 'standard.md', 'CI-CD.md']
+          children: ['index.md', 'standard.md', 'git-flow.md', 'CI-CD.md']
         }
       ],
       '/vue/': [
