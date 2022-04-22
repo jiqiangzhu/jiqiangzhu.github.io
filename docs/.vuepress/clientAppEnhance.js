@@ -46,7 +46,7 @@ function renderGitalk(fullPath) {
     clientSecret: 'b4e44029b47731e76105405c98711b09be6a1ac5', // come from github development
     repo: 'jiqiangzhu.github.io',
     owner: 'jiqiangzhu',
-    admin: ['jiqiangzhu'],
+    admin: ['jiqiangzhu', 'zhujiqiang'],
     id: fullPath.slice(1, -5),
     distractionFreeMode: false,
     language: 'zh-CN',
