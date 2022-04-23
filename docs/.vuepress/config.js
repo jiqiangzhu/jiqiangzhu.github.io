@@ -62,7 +62,7 @@ module.exports = {
       '/standard/': [
         {
           text: '企业级开发规范自动化构建',
-          children: ['index.md', 'standard.md', 'git-flow.md', 'CI-CD.md']
+          children: ['index.md', 'standard.md', 'common-config.md', 'git-flow.md', 'utils.md', 'erp-components.md', 'CI-CD.md']
         }
       ],
       '/vue/': [
