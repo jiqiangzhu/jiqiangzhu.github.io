@@ -41,6 +41,10 @@ module.exports = {
             text: '后端',
             link: '/api/'
           },
+          {
+            text: '工作日志',
+            link: '/daily-record/'
+          },
         ],
       },
     ],
@@ -95,6 +99,12 @@ module.exports = {
         {
           text: '2022常见面试题',
           children: ['basic.md', 'code.md', 'framework.md', 'browser.md', 'optimize.md', 'composite.md']
+        }
+      ],
+      '/daily-record/': [
+        {
+          text: '工作日志',
+          children: ['2022_04.md']
         }
       ]
     }
