@@ -6,6 +6,12 @@
 
 [开发规范](./standard.html)
 
+[通用配置](./common-config.html)
+
 [git-flow](./git-flow.html)
+
+[utils工具类](./utils.html)
+
+[erp组件](./erp-components.html)
 
 [CI-CD(持续构建-持续集成)](./CI-CD.html)
