@@ -45,6 +45,10 @@ module.exports = {
             text: '工作日志',
             link: '/daily-record/'
           },
+          {
+            text: '前端拓展',
+            link: '/web-expand/'
+          },
         ],
       },
     ],
@@ -83,6 +87,10 @@ module.exports = {
           children: ['vue-interview.md']
         }
       ],
+      '/web-expand/': [{
+        text: '前端拓展',
+        children: ['index.md', 'indexedDB.md']
+      }],
       '/network/': [
         {
           text: '计算机网络',
