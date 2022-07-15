@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper.21dcd24c.js";import{o as a,c as r,a as e,d as o}from"./app.f44b82ad.js";const c={},i=e("h1",{id:"vite",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vite","aria-hidden":"true"},"#"),o(" Vite")],-1),s=[i];function _(n,d){return a(),r("div",null,s)}var f=t(c,[["render",_],["__file","vite.html.vue"]]);export{f as default};

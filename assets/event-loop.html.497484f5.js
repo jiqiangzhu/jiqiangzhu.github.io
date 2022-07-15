@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-37bf0cee","path":"/web/event-loop.html","title":"EventLoop\u4E8B\u4EF6\u5FAA\u73AF","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"\u4EFB\u52A1\u961F\u5217","slug":"\u4EFB\u52A1\u961F\u5217","children":[]},{"level":2,"title":"Event Loop","slug":"event-loop","children":[]}]}');export{e as data};
