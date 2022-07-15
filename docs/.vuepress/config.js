@@ -52,7 +52,7 @@ module.exports = {
         ],
       },
     ],
-    darkMode: true, // 是否展示切换夜间模式按钮
+    // darkMode: true, // 是否展示切换夜间模式按钮
     repo: 'https://github.com/jiqiangzhu/jiqiangzhu.github.io',
     repoLabel: 'Github',
     // sidebarDepth: 1,
